@@ -1,28 +1,29 @@
-# awesomewm-gnome [![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)]()
+# awesomewm-gnome
 
-<p align="center">
-  <img src="https://i.imgur.com/Ia1pJUK.png" width="45%" height="45%">
-</p>
+Run a GNOME 3.x session but use awesome for window management
 
-Allows you to use awesome-wm with GNOME 3 Session infrastructure.
+## Dependencies
 
+The scripts in this repository create a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.3. Earlier versions of awesome don't integrate well with GTK and are sort of buggy.
 
-## What do I'll get by installing it?
-> In order to manage things your cursor/icon themes, online accounts, etc.
+Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
+### Ubuntu 18.04
 
-## Requirements
-* awesome-wm
-* GNOME (3.36.x)
-* GDM (optional, but useful)
-* GNOME Flashback
+```sh
+sudo apt-get install gnome gnome-flashback gnome-icon-theme gnome-themes-extra make
+```
 
-## Installation from scratch
-Using `make`:
-* download the repo.
-* on the terminal go to the repo directory.
-* `sudo make install`
+## Setup
 
----
-MIT - © 2014-2017 [Lorenzo Villani](https://github.com/lvillani). 2017 i3-gnome team.
+Run the following with if you have sudo installed
 
+```sh
+sudo make install
+```
+
+## How to uninstall
+
+```sh
+sudo make uninstall
+```
