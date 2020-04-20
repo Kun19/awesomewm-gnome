@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Awesome-WM + GNOME
+Comment=This session logs you into awesome wm with GNOME session integration
+Exec=gnome-session-awesome
+TryExec=awesome-gnome
+Type=Application
+DesktopNames=GNOME
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
